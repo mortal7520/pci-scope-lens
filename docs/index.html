@@ -40,6 +40,21 @@ footer{margin-top:56px;color:#6f7da0;font-size:13px}
 <strong>Edge:</strong> download the <code>.zip</code>, open <code>edge://extensions</code>, enable Developer mode, choose <em>Load unpacked</em>.</p>
 <p>Store listings are pending; the GitHub release is the manual-install channel.</p>
 </div>
+
+<div class="card" id="checklist">
+<h2 style="margin-top:0">Quick SAQ A self-check</h2>
+<p>Use this as a conversation starter, not an audit. If you answer “no” to 1–3, the payment page may be outside the simplest SAQ A shape.</p>
+<ol>
+<li>Are card number, expiry, and CVV fields inside a payment-provider iframe or hosted fields?</li>
+<li>Does your server ever receive raw card data, even transiently?</li>
+<li>Is the checkout page served over HTTPS with no mixed-content warnings?</li>
+<li>Do you know which third-party scripts run on the checkout page?</li>
+<li>Can you list every payment provider and integration in the card flow?</li>
+<li>Do you have a current network diagram for the checkout path?</li>
+</ol>
+<p><a href="https://github.com/mortal7520/pci-scope-lens/issues/new" style="color:#9aa7c7">Send feedback / request the full checklist</a></p>
+</div>
+
 <div class="card">
 <h2 style="margin-top:0">Privacy</h2>
 <p>No automatic network calls, no storage, no analytics. The extension reads page structure only; it does not read or transmit form values. The only outbound link is the “Download” / “Source” link you click.</p>
