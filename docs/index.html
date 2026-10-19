@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PCI Scope Lens — see what your checkout loads</title>
+<style>
+:root{--bg:#0b1020;--card:#141b32;--text:#e8ecff;--muted:#9aa7c7;--accent:#7aa2ff;--ok:#4ade80}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:radial-gradient(900px 500px at 20% 0%,#1b2a5a 0%,var(--bg) 55%);color:var(--text)}
+main{max-width:880px;margin:0 auto;padding:64px 24px}
+h1{font-size:44px;line-height:1.1;margin:0 0 12px}h2{margin-top:44px}
+p{color:var(--muted)}.tag{display:inline-block;color:var(--ok);border:1px solid #245c3a;background:#0e2a1c;padding:4px 10px;border-radius:999px;font-size:13px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+a.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+.primary{background:var(--accent);color:#081020}.secondary{border:1px solid #34406a;color:var(--text)}
+.card{background:var(--card);border:1px solid #263154;border-radius:14px;padding:20px 22px;margin:18px 0}
+ul{color:var(--muted)}code{color:#cfe0ff}
+footer{margin-top:56px;color:#6f7da0;font-size:13px}
+</style>
+</head>
+<body><main>
+<span class="tag">Local-only · no data leaves the browser</span>
+<h1>See what your checkout actually loads.</h1>
+<p>PCI Scope Lens is a browser extension for Shopify and card-checkout pages. It flags third-party scripts, iframes, and payment fields so a small team can see what is in scope before filling in a PCI SAQ A questionnaire.</p>
+<div class="cta">
+<a class="btn primary" href="https://github.com/mortal7520/pci-scope-lens/releases/tag/v0.1.0">Download v0.1.0</a>
+<a class="btn secondary" href="https://github.com/mortal7520/pci-scope-lens">Source &amp; docs</a>
+</div>
+<div class="card">
+<h2 style="margin-top:0">What it does</h2>
+<ul>
+<li>Highlights scripts, iframes, and input fields on the current checkout page.</li>
+<li>Marks payment fields and third-party origins that may expand SAQ scope.</li>
+<li>Runs entirely in the tab; no account, no telemetry, no upload.</li>
+</ul>
+</div>
+<div class="card">
+<h2 style="margin-top:0">Install</h2>
+<p><strong>Firefox:</strong> download the <code>.xpi</code>, open <code>about:debugging#/runtime/this-firefox</code>, choose <em>Load Temporary Add-on</em>.<br>
+<strong>Edge:</strong> download the <code>.zip</code>, open <code>edge://extensions</code>, enable Developer mode, choose <em>Load unpacked</em>.</p>
+<p>Store listings are pending; the GitHub release is the manual-install channel.</p>
+</div>
+<div class="card">
+<h2 style="margin-top:0">Privacy</h2>
+<p>No network calls, no storage, no analytics. The extension reads page structure only; it does not read or transmit form values.</p>
+</div>
+<footer>PCI Scope Lens · MIT · <a href="https://github.com/mortal7520/pci-scope-lens/blob/master/PRIVACY.md" style="color:#9aa7c7">Privacy</a></footer>
+</main></body></html>
