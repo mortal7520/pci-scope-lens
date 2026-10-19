@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PCI Scope Lens</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="brand">PCI Scope Lens</div>
+    <div class="sub">Card-field isolation check · client-side only</div>
+  </header>
+
+  <main id="app">
+    <div class="loading" id="loading">Scanning this page…</div>
+    <section id="result" hidden>
+      <div class="badge" id="badge">—</div>
+      <div class="confidence" id="confidence"></div>
+      <p class="reason" id="reason"></p>
+
+      <div class="block" id="providersBlock">
+        <h2>Provider iframes</h2>
+        <ul id="providers"></ul>
+      </div>
+
+      <div class="block" id="warningsBlock">
+        <h2>Warnings</h2>
+        <ul id="warnings"></ul>
+      </div>
+
+      <div class="block" id="fieldsBlock">
+        <h2>Direct card fields</h2>
+        <ul id="fields"></ul>
+      </div>
+
+      <div class="actions">
+        <button id="copy" class="btn">Copy JSON</button>
+        <a id="open" class="btn primary" href="#" target="_blank" rel="noopener">Open checklist</a>
+      </div>
+      <p class="foot">Not an audit or legal advice. No page data leaves this browser.</p>
+    </section>
+    <section id="error" hidden>
+      <p id="errorText"></p>
+      <p class="foot">Reload the page after installing the extension, then try again.</p>
+    </section>
+  </main>
+
+  <script src="logic.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
