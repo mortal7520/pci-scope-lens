@@ -1,0 +1,146 @@
+{
+  "signals": {
+    "url": "https://www.fashionnova.com/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+    "https": true,
+    "providerIframes": [
+      "PayPal",
+      "Shopify Payments",
+      "Shopify Payments",
+      "Shopify Payments",
+      "Shopify Payments",
+      "Shopify Payments",
+      "Shopify Payments",
+      "Shopify Payments",
+      "Shopify Payments",
+      "Shopify Payments",
+      "Shopify Payments",
+      "Shopify Payments"
+    ],
+    "iframes": [
+      {
+        "src": "https://checkout.shopify.com/2939277/sandboxes/wallets?shopHost=www.fashionnova.com&wallet=PAYPAL_EXPRESS&hmac=47b4cac7bb201b9768fff1a4b8df3993a9959cf56bbdb46949a7d49cc4b0541d",
+        "title": "Pay with PayPal"
+      },
+      {
+        "src": "https://checkout.shopify.com/2939277/sandboxes/wallets?shopHost=www.fashionnova.com&wallet=amazon_pay&hmac=f0207f596bc493be49f5b54b72c345a293a4a6df049dc89c741ad0a3705c03ec",
+        "title": "Pay with Amazon Pay"
+      },
+      {
+        "src": "https://checkout.shopify.com/2939277/sandboxes/wallets?shopHost=www.fashionnova.com&wallet=GOOGLE_PAY&hmac=0d417a96b10c3868ed7c18832a6266c8a2f0c160039bf56b52c9dd7a0587fe43",
+        "title": "Pay with Google Pay"
+      },
+      {
+        "src": "https://checkout.pci.shopifyinc.com/build/09497de/number-ltr.html?identifier=&locationURL=&localFonts[]=%7B%22name%22%3A%22uW6UA4rK%22%2C%22source%22%3A%22local(%27uW6UA4rK%27)%2C%20url(https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0293%2F9277%2Ffiles%2Fproxima-nova-light.woff2%3Fv%3D1697221144)%20format(%27woff2%27)%22%7D&localFonts[]=%7B%22name%22%3A%22yNHLE335%22%2C%22source%22%3A%22local(%27yNHLE335%27)%2C%20url(https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0293%2F9277%2Ffiles%2Fproxima-nova-heavy.woff%3Fv%3D1697221144)%20format(%27woff%27)%22%7D",
+        "title": "Card number"
+      },
+      {
+        "src": "https://checkout.pci.shopifyinc.com/build/09497de/expiry-ltr.html?identifier=&locationURL=&localFonts[]=%7B%22name%22%3A%22uW6UA4rK%22%2C%22source%22%3A%22local(%27uW6UA4rK%27)%2C%20url(https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0293%2F9277%2Ffiles%2Fproxima-nova-light.woff2%3Fv%3D1697221144)%20format(%27woff2%27)%22%7D&localFonts[]=%7B%22name%22%3A%22yNHLE335%22%2C%22source%22%3A%22local(%27yNHLE335%27)%2C%20url(https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0293%2F9277%2Ffiles%2Fproxima-nova-heavy.woff%3Fv%3D1697221144)%20format(%27woff%27)%22%7D",
+        "title": "Expiration date (MM / YY)"
+      },
+      {
+        "src": "https://checkout.pci.shopifyinc.com/build/09497de/verification_value-ltr.html?identifier=&locationURL=&localFonts[]=%7B%22name%22%3A%22uW6UA4rK%22%2C%22source%22%3A%22local(%27uW6UA4rK%27)%2C%20url(https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0293%2F9277%2Ffiles%2Fproxima-nova-light.woff2%3Fv%3D1697221144)%20format(%27woff2%27)%22%7D&localFonts[]=%7B%22name%22%3A%22yNHLE335%22%2C%22source%22%3A%22local(%27yNHLE335%27)%2C%20url(https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0293%2F9277%2Ffiles%2Fproxima-nova-heavy.woff%3Fv%3D1697221144)%20format(%27woff%27)%22%7D",
+        "title": "Security code"
+      },
+      {
+        "src": "https://checkout.pci.shopifyinc.com/build/09497de/issue_date-ltr.html?identifier=&locationURL=&localFonts[]=%7B%22name%22%3A%22uW6UA4rK%22%2C%22source%22%3A%22local(%27uW6UA4rK%27)%2C%20url(https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0293%2F9277%2Ffiles%2Fproxima-nova-light.woff2%3Fv%3D1697221144)%20format(%27woff2%27)%22%7D&localFonts[]=%7B%22name%22%3A%22yNHLE335%22%2C%22source%22%3A%22local(%27yNHLE335%27)%2C%20url(https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0293%2F9277%2Ffiles%2Fproxima-nova-heavy.woff%3Fv%3D1697221144)%20format(%27woff%27)%22%7D",
+        "title": "Issue date (MM / YY)"
+      },
+      {
+        "src": "https://checkout.pci.shopifyinc.com/build/09497de/issue_number-ltr.html?identifier=&locationURL=&localFonts[]=%7B%22name%22%3A%22uW6UA4rK%22%2C%22source%22%3A%22local(%27uW6UA4rK%27)%2C%20url(https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0293%2F9277%2Ffiles%2Fproxima-nova-light.woff2%3Fv%3D1697221144)%20format(%27woff2%27)%22%7D&localFonts[]=%7B%22name%22%3A%22yNHLE335%22%2C%22source%22%3A%22local(%27yNHLE335%27)%2C%20url(https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0293%2F9277%2Ffiles%2Fproxima-nova-heavy.woff%3Fv%3D1697221144)%20format(%27woff%27)%22%7D",
+        "title": "Issue number"
+      },
+      {
+        "src": "https://checkout.pci.shopifyinc.com/build/09497de/name-ltr.html?identifier=&locationURL=&localFonts[]=%7B%22name%22%3A%22uW6UA4rK%22%2C%22source%22%3A%22local(%27uW6UA4rK%27)%2C%20url(https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0293%2F9277%2Ffiles%2Fproxima-nova-light.woff2%3Fv%3D1697221144)%20format(%27woff2%27)%22%7D&localFonts[]=%7B%22name%22%3A%22yNHLE335%22%2C%22source%22%3A%22local(%27yNHLE335%27)%2C%20url(https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0293%2F9277%2Ffiles%2Fproxima-nova-heavy.woff%3Fv%3D1697221144)%20format(%27woff%27)%22%7D",
+        "title": "Name on card"
+      },
+      {
+        "src": "https://extensions.shopifycdn.com/shopifycloud/checkout-web/assets/c1/assets/load.D9UyAKTL.html",
+        "title": ""
+      },
+      {
+        "src": "https://cdn.shopify.com/cdn/shopifycloud/checkout-web/assets/c1/assets/load.D9UyAKTL.html",
+        "title": ""
+      },
+      {
+        "src": "https://www.fashionnova.com/web-pixels@9f5e2762wb720532ap19708c42m93b2bec3/app/web-pixel-196732@8a9a175b11d15038a70fe78d09c59720/sandbox/modern/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "title": ""
+      },
+      {
+        "src": "https://www.fashionnova.com/web-pixels@9f5e2762wb720532ap19708c42m93b2bec3/custom/web-pixel-32892@52/sandbox/modern/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "title": ""
+      },
+      {
+        "src": "https://www.fashionnova.com/web-pixels@9f5e2762wb720532ap19708c42m93b2bec3/custom/web-pixel-131196@15/sandbox/modern/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "title": ""
+      },
+      {
+        "src": "https://www.fashionnova.com/web-pixels@9f5e2762wb720532ap19708c42m93b2bec3/custom/web-pixel-163964@4/sandbox/modern/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "title": ""
+      },
+      {
+        "src": "https://www.fashionnova.com/web-pixels@9f5e2762wb720532ap19708c42m93b2bec3/custom/web-pixel-196732@2/sandbox/modern/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "title": ""
+      },
+      {
+        "src": "https://www.fashionnova.com/web-pixels@9f5e2762wb720532ap19708c42m93b2bec3/custom/web-pixel-229500@2/sandbox/modern/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "title": ""
+      },
+      {
+        "src": "https://www.fashionnova.com/web-pixels@9f5e2762wb720532ap19708c42m93b2bec3/custom/web-pixel-262268@4/sandbox/modern/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "title": ""
+      },
+      {
+        "src": "https://www.fashionnova.com/web-pixels@9f5e2762wb720532ap19708c42m93b2bec3/custom/web-pixel-327804@12/sandbox/modern/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "title": ""
+      },
+      {
+        "src": "https://www.fashionnova.com/web-pixels@9f5e2762wb720532ap19708c42m93b2bec3/custom/web-pixel-360572@3/sandbox/modern/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "title": ""
+      },
+      {
+        "src": "https://www.fashionnova.com/web-pixels@9f5e2762wb720532ap19708c42m93b2bec3/custom/web-pixel-393340@1/sandbox/modern/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "title": ""
+      },
+      {
+        "src": "https://www.fashionnova.com/web-pixels@9f5e2762wb720532ap19708c42m93b2bec3/custom/web-pixel-426108@1/sandbox/modern/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "title": ""
+      },
+      {
+        "src": "https://www.fashionnova.com/web-pixels@9f5e2762wb720532ap19708c42m93b2bec3/custom/web-pixel-shopify-custom-pixel@0520/sandbox/modern/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "title": ""
+      }
+    ],
+    "directFields": [],
+    "forms": [
+      {
+        "action": "https://www.fashionnova.com/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "method": "post"
+      },
+      {
+        "action": "https://www.fashionnova.com/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "method": "post"
+      },
+      {
+        "action": "https://www.fashionnova.com/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034",
+        "method": "post"
+      }
+    ],
+    "formsWithPaymentAction": true,
+    "mixedContent": false
+  },
+  "result": {
+    "verdict": "saq_a",
+    "label": "SAQ A likely",
+    "confidence": "medium",
+    "providers": [
+      "PayPal",
+      "Shopify Payments"
+    ],
+    "directFields": [],
+    "warnings": [
+      "Multiple payment providers detected; confirm which one is live."
+    ],
+    "reason": "Card fields appear to be hosted by a payment provider iframe; no direct card inputs were found.",
+    "checkedUrl": "https://www.fashionnova.com/checkouts/cn/hWNI9VbdrNQZUCfB4AT0UnDk/en-us?_cs=3.AMPS&_r=AQABZNaLbVPms5PCJ_P5gY7Ky24gkGk-isFiOYKT3u-sY7rsvrZc&_s=2118b9e3-3533-4b63-8127-5c7acfea0bd1&_y=9dc62c88-40c5-431e-a795-83db6ee18034"
+  }
+}

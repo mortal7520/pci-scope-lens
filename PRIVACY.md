@@ -10,23 +10,24 @@ isolation: payment-provider iframes, direct card input fields, HTTPS, and mixed 
 ## Data collection
 
 **None.** The extension does not collect, transmit, sell, or share personal data, browsing history,
-page content, or analytics. There is no account, no server, and no network request from the
-extension.
+page content, or analytics. There is no account and no extension backend. The extension makes
+**no automatic network request**. The only outbound navigation is the **Open checklist** link
+you click, which opens `https://mortal7520.github.io/pci-scope-lens/` in a new tab.
 
 ## How it works
 
-- A content script runs on the active page and reads the DOM locally.
+- A content script is injected on pages matching `<all_urls>` at `document_idle`, but it only scans when you click the extension icon and the popup asks the active tab for a scan.
 - When you click the extension icon, the popup asks that tab for a scan result.
 - The result is rendered in the popup.
 - "Copy JSON" writes the result to your clipboard only when you click it.
-- "Open checklist" opens a separate website in a new tab; that site has its own privacy policy.
+- "Open checklist" opens `https://mortal7520.github.io/pci-scope-lens/` in a new tab; that site has its own privacy policy.
 
 ## Permissions
 
 | Permission | Why |
 |---|---|
-| `activeTab` | Read the page you explicitly invoke the extension on. |
-| `host_permissions: <all_urls>` | The content script must be available on checkout pages across sites; it only reads the DOM when you open the popup. |
+| `activeTab` | Lets the popup ask the active tab for a scan result. |
+| `host_permissions: <all_urls>` | The content script is available on checkout pages across sites. It does not read the DOM until you open the popup and trigger a scan. |
 
 ## Data retention
 

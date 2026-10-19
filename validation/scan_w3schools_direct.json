@@ -1,0 +1,25 @@
+{
+  "verdict": "saq_d",
+  "label": "SAQ D / A-EP likely",
+  "confidence": "high",
+  "providers": [],
+  "directFields": [
+    {
+      "name": "cardnumber"
+    },
+    {
+      "name": "expmonth"
+    },
+    {
+      "name": "expyear"
+    },
+    {
+      "name": "cvv"
+    }
+  ],
+  "warnings": [
+    "Direct card fields detected on the page — this is not SAQ A isolation."
+  ],
+  "reason": "Card inputs appear directly on the page; card data may touch your servers.",
+  "checkedUrl": "https://www.w3schools.com/howto/tryhow_css_checkout_form.htm"
+}

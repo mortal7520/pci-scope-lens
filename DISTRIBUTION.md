@@ -9,9 +9,18 @@ runbook plus the exact artifacts and copy to paste when you do it.
 
 | store | cost | account | package | status |
 |---|---|---|---|---|
-| Firefox Add-ons (AMO) | $0 | Firefox Account (free) | `dist/pci-scope-lens-0.1.0-firefox.xpi` | built, lint-clean, not uploaded |
+| Firefox Add-ons (AMO) | $0 | Firefox Account (free) | `dist/pci-scope-lens-0.1.0-firefox.xpi` | **submitted 2026-10-19, Awaiting Review** |
 | Microsoft Edge Add-ons | $0 | Microsoft Partner Center (free) | `dist/pci-scope-lens-0.1.0-edge.zip` | built, not uploaded |
 | Chrome Web Store | $5 one-time | Google developer account | not built | **out of scope** (fee) |
+
+
+## 0. GitHub release (live now, no store account needed)
+
+https://github.com/mortal7520/pci-scope-lens/releases/tag/v0.1.0
+
+- Firefox: download `.xpi` → `about:debugging#/runtime/this-firefox` → Load Temporary Add-on (or set `xpinstall.signatures.required=false` in a dev build).
+- Edge: download `.zip` → `edge://extensions` → Developer mode → Load unpacked.
+- This is a **manual-install** release, not a store listing; AMO/Edge review still pending.
 
 ---
 
@@ -224,3 +233,13 @@ Firefox runtime was **not** exercised — there is no Firefox binary on this mac
 * The Chrome Web Store path is deliberately not prepared — it needs the $5 fee the task rules out.
 * The Firefox package is unsigned. `web-ext sign` requires AMO API credentials; signing happens during
   the AMO upload flow, not from this machine.
+
+
+## AMO submission record (2026-10-19)
+
+- API credentials generated (issuer `user:20259039:667`; secret only in `~/.config/bbflow/mozilla/amo-api.txt`, 0600)
+- `web-ext sign --channel listed --amo-metadata /tmp/amo-meta.json` accepted
+- AMO status: **Awaiting Review**
+- Developer edit: https://addons.mozilla.org/en-US/developers/addon/pci-scope-lens/edit
+- Public page (after approval): https://addons.mozilla.org/en-US/firefox/addon/pci-scope-lens/
+- Metadata used: `{"categories":["privacy-security"],"version":{"license":"MIT"}}`

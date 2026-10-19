@@ -4,7 +4,9 @@ A client-side lead magnet for the PCI SAQ A copilot. It scans the current page a
 whether card fields look **isolated in a payment provider iframe** (SAQ A shape) or **direct on
 the page** (SAQ D / A-EP shape).
 
-No network requests. No page data leaves the browser.
+No automatic network requests, no storage, and no page data leaves the browser. The only
+outbound navigation is the "Open checklist" link you click, which opens the public project page
+in a new tab.
 
 ## Verdicts
 

@@ -1,0 +1,86 @@
+{
+  "signals": {
+    "url": "https://stripe-payments-demo.appspot.com/",
+    "https": true,
+    "providerIframes": [
+      "Stripe",
+      "Stripe",
+      "Stripe",
+      "Stripe",
+      "Stripe",
+      "Stripe",
+      "Stripe",
+      "Stripe",
+      "Stripe",
+      "Stripe",
+      "Stripe"
+    ],
+    "iframes": [
+      {
+        "src": "https://js.stripe.com/v3/elements-inner-payment-request-a20f22bf1a0e512bb5fd9b5ae52bb6fb.html#__shared_params__[version]=v3&__shared_params__[light_experiment_assignments]=%7B%22token%22%3A%22b2fbe942-9c60-4e18-a3ba-4aec2ed66de3%22%2C%22assignments%22%3A%7B%22react_version_18_v3%22%3A%7B%22variant%22%3A%22control%22%2C%22population%22%3A0.5%7D%2C%22api_fastpath_guacamole_v1%22%3A%7B%22variant%22%3A%22treatment%22%2C%22population%22%3A1%7D%7D%2C%22unqualifiedExperiments%22%3A%7B%7D%7D&wait=false&mids[guid]=NA&mids[muid]=d601f918-2c9d-4c72-8edd-76a7319acfe2f74b31&mids[sid]=ef99522e-40ee-406a-9b82-243049b196177476e3&elementId=paymentRequestButton-642762a5-96b8-4c0d-bb4c-659e41fc960f&stripeJsMountedInIframe=false&rtl=false&componentName=paymentRequestButton&keyMode=test&apiKey=pk_test_PInFiPUnGR6pzLYZ2IE6oyPf&frameMessagingStrategy=postMessage&referrer=https%3A%2F%2Fstripe-payments-demo.appspot.com%2F&controllerId=__privateStripeController1891",
+        "title": "\u5b89\u5168\u652f\u4ed8\u6309\u94ae\u6846"
+      },
+      {
+        "src": "https://js.stripe.com/v3/elements-inner-card-720c0ecfcc9279df68fb7aaf7b4f60b2.html#__shared_params__[version]=v3&__shared_params__[light_experiment_assignments]=%7B%22token%22%3A%22b2fbe942-9c60-4e18-a3ba-4aec2ed66de3%22%2C%22assignments%22%3A%7B%22react_version_18_v3%22%3A%7B%22variant%22%3A%22control%22%2C%22population%22%3A0.5%7D%2C%22api_fastpath_guacamole_v1%22%3A%7B%22variant%22%3A%22treatment%22%2C%22population%22%3A1%7D%7D%2C%22unqualifiedExperiments%22%3A%7B%7D%7D&wait=false&mids[guid]=NA&mids[muid]=d601f918-2c9d-4c72-8edd-76a7319acfe2f74b31&mids[sid]=ef99522e-40ee-406a-9b82-243049b196177476e3&elementId=card-cf1db5bc-1654-422d-ae2c-6674c670dc29&hidePostalCode=true&style[base][iconColor]=%23666ee8&style[base][color]=%2331325f&style[base][fontWeight]=400&style[base][fontFamily]=-apple-system%2C+BlinkMacSystemFont%2C+%22Segoe+UI%22%2C+Roboto%2C+Oxygen-Sans%2C+Ubuntu%2C+Cantarell%2C+%22Helvetica+Neue%22%2C+sans-serif&style[base][fontSmoothing]=antialiased&style[base][fontSize]=15px&style[base][::placeholder][color]=%23aab7c4&style[base][:-webkit-autofill][color]=%23666ee8&stripeJsMountedInIframe=false&rtl=false&componentName=card&keyMode=test&apiKey=pk_test_PInFiPUnGR6pzLYZ2IE6oyPf&frameMessagingStrategy=postMessage&referrer=https%3A%2F%2Fstripe-payments-demo.appspot.com%2F&controllerId=__privateStripeController1891",
+        "title": "\u5b89\u5168\u94f6\u884c\u5361\u652f\u4ed8\u8f93\u5165\u6846"
+      },
+      {
+        "src": "https://js.stripe.com/v3/elements-inner-iban-82d59bea66cb6e09825a2a473745c48b.html#__shared_params__[version]=v3&__shared_params__[light_experiment_assignments]=%7B%22token%22%3A%22b2fbe942-9c60-4e18-a3ba-4aec2ed66de3%22%2C%22assignments%22%3A%7B%22react_version_18_v3%22%3A%7B%22variant%22%3A%22control%22%2C%22population%22%3A0.5%7D%2C%22api_fastpath_guacamole_v1%22%3A%7B%22variant%22%3A%22treatment%22%2C%22population%22%3A1%7D%7D%2C%22unqualifiedExperiments%22%3A%7B%7D%7D&wait=false&mids[guid]=NA&mids[muid]=d601f918-2c9d-4c72-8edd-76a7319acfe2f74b31&mids[sid]=ef99522e-40ee-406a-9b82-243049b196177476e3&elementId=iban-53e096b3-967f-452e-9e72-1c702dc28985&style[base][iconColor]=%23666ee8&style[base][color]=%2331325f&style[base][fontWeight]=400&style[base][fontFamily]=-apple-system%2C+BlinkMacSystemFont%2C+%22Segoe+UI%22%2C+Roboto%2C+Oxygen-Sans%2C+Ubuntu%2C+Cantarell%2C+%22Helvetica+Neue%22%2C+sans-serif&style[base][fontSmoothing]=antialiased&style[base][fontSize]=15px&style[base][::placeholder][color]=%23aab7c4&style[base][:-webkit-autofill][color]=%23666ee8&supportedCountries[0]=SEPA&stripeJsMountedInIframe=false&rtl=false&componentName=iban&keyMode=test&apiKey=pk_test_PInFiPUnGR6pzLYZ2IE6oyPf&frameMessagingStrategy=postMessage&referrer=https%3A%2F%2Fstripe-payments-demo.appspot.com%2F&controllerId=__privateStripeController1891",
+        "title": "\u5b89\u5168 IBAN \u8f93\u5165\u6846"
+      },
+      {
+        "src": "https://js.stripe.com/v3/elements-inner-ideal-bank-7309ba3d5df07002bcf43bf594eb3000.html#__shared_params__[version]=v3&__shared_params__[light_experiment_assignments]=%7B%22token%22%3A%22b2fbe942-9c60-4e18-a3ba-4aec2ed66de3%22%2C%22assignments%22%3A%7B%22react_version_18_v3%22%3A%7B%22variant%22%3A%22control%22%2C%22population%22%3A0.5%7D%2C%22api_fastpath_guacamole_v1%22%3A%7B%22variant%22%3A%22treatment%22%2C%22population%22%3A1%7D%7D%2C%22unqualifiedExperiments%22%3A%7B%7D%7D&wait=false&mids[guid]=NA&mids[muid]=d601f918-2c9d-4c72-8edd-76a7319acfe2f74b31&mids[sid]=ef99522e-40ee-406a-9b82-243049b196177476e3&elementId=idealBank-9db1f6ec-0447-4cca-98b9-77fd116e5d4d&style[base][padding]=10px+15px&style[base][iconColor]=%23666ee8&style[base][color]=%2331325f&style[base][fontWeight]=400&style[base][fontFamily]=-apple-system%2C+BlinkMacSystemFont%2C+%22Segoe+UI%22%2C+Roboto%2C+Oxygen-Sans%2C+Ubuntu%2C+Cantarell%2C+%22Helvetica+Neue%22%2C+sans-serif&style[base][fontSmoothing]=antialiased&style[base][fontSize]=15px&style[base][::placeholder][color]=%23aab7c4&style[base][:-webkit-autofill][color]=%23666ee8&stripeJsMountedInIframe=false&rtl=false&componentName=idealBank&keyMode=test&apiKey=pk_test_PInFiPUnGR6pzLYZ2IE6oyPf&frameMessagingStrategy=postMessage&referrer=https%3A%2F%2Fstripe-payments-demo.appspot.com%2F&controllerId=__privateStripeController1891",
+        "title": "\u5b89\u5168 iDEAL \u94f6\u884c\u9009\u62e9\u4e0b\u62c9\u6309\u94ae"
+      },
+      {
+        "src": "https://js.stripe.com/v3/elements-inner-ideal-bank-7309ba3d5df07002bcf43bf594eb3000.html#wait=false&mids[guid]=NA&mids[muid]=d601f918-2c9d-4c72-8edd-76a7319acfe2f74b31&mids[sid]=ef99522e-40ee-406a-9b82-243049b196177476e3&elementId=idealBank-9db1f6ec-0447-4cca-98b9-77fd116e5d4d&style[base][padding]=10px+15px&style[base][iconColor]=%23666ee8&style[base][color]=%2331325f&style[base][fontWeight]=400&style[base][fontFamily]=-apple-system%2C+BlinkMacSystemFont%2C+%22Segoe+UI%22%2C+Roboto%2C+Oxygen-Sans%2C+Ubuntu%2C+Cantarell%2C+%22Helvetica+Neue%22%2C+sans-serif&style[base][fontSmoothing]=antialiased&style[base][fontSize]=15px&style[base][::placeholder][color]=%23aab7c4&style[base][:-webkit-autofill][color]=%23666ee8&stripeJsMountedInIframe=false&rtl=false&componentName=idealBankSecondary&primaryElementType=idealBank&keyMode=test&isSecondaryFrame=true&referrer=https%3A%2F%2Fstripe-payments-demo.appspot.com%2F&controllerId=__privateStripeController1891",
+        "title": "\u5b89\u5168 iDEAL \u94f6\u884c\u9009\u62e9\u4e0b\u62c9\u5217\u8868"
+      },
+      {
+        "src": "https://js.stripe.com/v3/controller-with-preconnect-837b3ba280ce77b8f4416a2f4686fd3f.html#__shared_params__[version]=v3&__shared_params__[light_experiment_assignments]=%7B%22token%22%3A%22b2fbe942-9c60-4e18-a3ba-4aec2ed66de3%22%2C%22assignments%22%3A%7B%22react_version_18_v3%22%3A%7B%22variant%22%3A%22control%22%2C%22population%22%3A0.5%7D%2C%22api_fastpath_guacamole_v1%22%3A%7B%22variant%22%3A%22treatment%22%2C%22population%22%3A1%7D%7D%2C%22unqualifiedExperiments%22%3A%7B%7D%7D&apiKey=pk_test_PInFiPUnGR6pzLYZ2IE6oyPf&stripeJsId=b2fbe942-9c60-4e18-a3ba-4aec2ed66de3&stripeObjId=sobj-71c02293-e6f2-4aa4-b50f-9d6f37f0dd57&firstStripeInstanceCreatedLatency=350&controllerCount=1&isCheckout=false&stripeJsLoadTime=1792417304484.0999&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=d601f918-2c9d-4c72-8edd-76a7319acfe2f74b31&mids[sid]=ef99522e-40ee-406a-9b82-243049b196177476e3&referrer=https%3A%2F%2Fstripe-payments-demo.appspot.com%2F&controllerId=__privateStripeController1891",
+        "title": ""
+      },
+      {
+        "src": "https://js.stripe.com/v3/universal-link-modal-inner-7eb63765a76c8e935404b91801ae1781.html#apiKey=pk_test_PInFiPUnGR6pzLYZ2IE6oyPf&stripeJsId=b2fbe942-9c60-4e18-a3ba-4aec2ed66de3&mids[guid]=NA&mids[muid]=d601f918-2c9d-4c72-8edd-76a7319acfe2f74b31&mids[sid]=ef99522e-40ee-406a-9b82-243049b196177476e3&locale=zh&openerFrameId=__privateStripeFrame1893&surface=web_card_element_popup&referrer=https%3A%2F%2Fstripe-payments-demo.appspot.com%2F&controllerId=__privateStripeController1891",
+        "title": ""
+      },
+      {
+        "src": "https://js.stripe.com/v3/payment-request-inner-google-pay-0e714aa4d37aaff0833a93aeff2bf232.html#__shared_params__[version]=v3&__shared_params__[light_experiment_assignments]=%7B%22token%22%3A%22b2fbe942-9c60-4e18-a3ba-4aec2ed66de3%22%2C%22assignments%22%3A%7B%22react_version_18_v3%22%3A%7B%22variant%22%3A%22control%22%2C%22population%22%3A0.5%7D%2C%22api_fastpath_guacamole_v1%22%3A%7B%22variant%22%3A%22treatment%22%2C%22population%22%3A1%7D%7D%2C%22unqualifiedExperiments%22%3A%7B%7D%7D&authentication[apiKey]=pk_test_PInFiPUnGR6pzLYZ2IE6oyPf&mids[guid]=NA&mids[muid]=d601f918-2c9d-4c72-8edd-76a7319acfe2f74b31&mids[sid]=ef99522e-40ee-406a-9b82-243049b196177476e3&origin=https%3A%2F%2Fstripe-payments-demo.appspot.com&referrer=https%3A%2F%2Fstripe-payments-demo.appspot.com%2F&controllerId=__privateStripeController1891",
+        "title": ""
+      },
+      {
+        "src": "https://js.stripe.com/v3/payment-request-inner-browser-e49c03f63c46e26f06ffeff7f357930c.html#__shared_params__[version]=v3&__shared_params__[light_experiment_assignments]=%7B%22token%22%3A%22b2fbe942-9c60-4e18-a3ba-4aec2ed66de3%22%2C%22assignments%22%3A%7B%22react_version_18_v3%22%3A%7B%22variant%22%3A%22control%22%2C%22population%22%3A0.5%7D%2C%22api_fastpath_guacamole_v1%22%3A%7B%22variant%22%3A%22treatment%22%2C%22population%22%3A1%7D%7D%2C%22unqualifiedExperiments%22%3A%7B%7D%7D&authentication[apiKey]=pk_test_PInFiPUnGR6pzLYZ2IE6oyPf&mids[guid]=NA&mids[muid]=d601f918-2c9d-4c72-8edd-76a7319acfe2f74b31&mids[sid]=ef99522e-40ee-406a-9b82-243049b196177476e3&origin=https%3A%2F%2Fstripe-payments-demo.appspot.com&referrer=https%3A%2F%2Fstripe-payments-demo.appspot.com%2F&controllerId=__privateStripeController1891",
+        "title": ""
+      },
+      {
+        "src": "https://js.stripe.com/v3/hcaptcha-invisible-f2c1cb7c64f2cac4ea5cf3490409d1fb.html#debugMode=false&parentOrigin=https%3A%2F%2Fstripe-payments-demo.appspot.com",
+        "title": ""
+      },
+      {
+        "src": "https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fstripe-payments-demo.appspot.com%2F&title=Stripe%20Payments%20Demo&referrer=&muid=d601f918-2c9d-4c72-8edd-76a7319acfe2f74b31&sid=ef99522e-40ee-406a-9b82-243049b196177476e3&version=6&preview=false&__shared_params__[version]=v3",
+        "title": ""
+      }
+    ],
+    "directFields": [],
+    "forms": [
+      {
+        "action": "https://stripe-payments-demo.appspot.com/orders",
+        "method": "post"
+      }
+    ],
+    "formsWithPaymentAction": true,
+    "mixedContent": false
+  },
+  "result": {
+    "verdict": "saq_a",
+    "label": "SAQ A likely",
+    "confidence": "medium",
+    "providers": [
+      "Stripe"
+    ],
+    "directFields": [],
+    "warnings": [],
+    "reason": "Card fields appear to be hosted by a payment provider iframe; no direct card inputs were found.",
+    "checkedUrl": "https://stripe-payments-demo.appspot.com/"
+  }
+}

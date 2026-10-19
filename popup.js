@@ -2,7 +2,7 @@
 (function () {
   "use strict";
 
-  const CHECKLIST_URL = "https://patent-stock-twist-temporary.trycloudflare.com/assessment";
+  const CHECKLIST_URL = "https://mortal7520.github.io/pci-scope-lens/";
 
   function $(id) { return document.getElementById(id); }
 

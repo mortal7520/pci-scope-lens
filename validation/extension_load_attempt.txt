@@ -1,0 +1,9 @@
+chrome://extensions-internals (Chrome 155, --load-extension + --enable-unsafe-extension-debugging):
+  COMPONENT  fignfifoniblkonapihmkfakmlgkbkcf Google Network Speech
+  COMPONENT  mhjfbmdgcfjbbpaeojofohoefgiehjai Chrome PDF Viewer
+  COMPONENT  nkeimhogjdpnpccoofpliimaahmaaome Google Hangouts
+  total: 3 (only COMPONENT; PCI Scope Lens absent)
+Extensions.loadUnpacked -> {'id': 'mociheikkepefaedkbcndfccnpeoocch'}
+Extensions.getExtensions -> {'extensions': []}
+popup.html navigation -> chrome-error://chromewebdata/
+=> popup UI cannot be exercised: extension never installs.
