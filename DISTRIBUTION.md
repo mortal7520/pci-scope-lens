@@ -196,11 +196,11 @@ from the old one.
 ## 8. Release process (every future version)
 
 ```bash
-# 1. bump version in manifest.json (e.g. 0.1.1)
+# 1. bump version in manifest.json (e.g. 0.1.2)
 # 2. rebuild both packages
 ./build_dist.sh
 # 3. lint the Firefox package again
-unzip -q dist/pci-scope-lens-0.1.1-firefox.xpi -d /tmp/lint-fx && \
+unzip -q dist/pci-scope-lens-0.1.2-firefox.xpi -d /tmp/lint-fx && \
   npx --yes web-ext@8 lint --source-dir /tmp/lint-fx
 # 4. upload: AMO -> Developer Hub -> the add-on -> New Version
 #            Edge -> Partner Center -> the extension -> Update

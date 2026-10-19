@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "PCI Scope Lens",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "See whether card fields are isolated in a PCI provider iframe. Client-side only; no data leaves the browser.",
   "permissions": [
     "activeTab"
