@@ -1,9 +1,9 @@
-# Edge Add-ons submission runbook — PCI Scope Lens 0.1.0
+# Edge Add-ons submission runbook — PCI Scope Lens 0.1.2
 
 T44. **Nothing was uploaded and no account was created.** This is the verified package, the exact field
 values, and the click path through Partner Center.
 
-Package under test: `dist/pci-scope-lens-0.1.0-edge.zip` · 7,753 B ·
+Package under test: `dist/pci-scope-lens-0.1.2-edge.zip` · 7,753 B ·
 `sha256 ee95c73be981a3863af77318372b155b7d099847bf734cfa48af8b7f21cbad91` (unchanged since the T42 build).
 
 Sources for the steps and limits: [Publish a Microsoft Edge extension](https://learn.microsoft.com/en-us/microsoft-edge/extensions/publish/publish-extension)
@@ -18,7 +18,7 @@ Sources for the steps and limits: [Publish a Microsoft Edge extension](https://l
 | zip opens, 7 entries, no directories | **PASS** | `unzip -Z1` lists `manifest.json logic.js content.js popup.html popup.css popup.js icon128.png` |
 | no store / test / doc files | **PASS** | no `store/`, `test-fixtures/`, `validation/`, `test_*.py`, `README.md` |
 | `manifest_version` | **PASS** — 3 | parsed from the zip, not the source tree |
-| name / version | `PCI Scope Lens` (14 chars) / `0.1.0` | short enough for any store name field |
+| name / version | `PCI Scope Lens` (14 chars) / `0.1.2` | short enough for any store name field |
 | manifest description | 108 chars | becomes the store **short description**; short enough for any limit |
 | permissions | `["activeTab"]` | only what the popup needs |
 | host_permissions | `["<all_urls>"]` | required — see §4 justification |
@@ -51,7 +51,7 @@ data. Expect a reviewer to notice them; §4 says so up front.
    operator and is *not* done here.
 2. **Create the extension** — Partner Center → **Home → Workspaces → Edge** card → **Create new
    extension**. The *Upload package (.zip file)* page opens.
-3. **Upload** — drag `dist/pci-scope-lens-0.1.0-edge.zip` onto the drop zone (or *Browse your files*).
+3. **Upload** — drag `dist/pci-scope-lens-0.1.2-edge.zip` onto the drop zone (or *Browse your files*).
    Partner Center validates the package and lists it. Then left nav → **Extension overview** → review →
    **Packages** → **Continue**.
 4. **Availability** — **Visibility: Public**; **Markets: all markets** (default). → **Save & Continue**.

@@ -40,7 +40,7 @@ Package:
 ```bash
 cd money/mvp/pci-scope-lens
 ./package.sh
-# writes dist/pci-scope-lens-0.1.0.zip, never overwrites the frozen archive
+# writes dist/pci-scope-lens-0.1.2.zip, never overwrites the frozen archive
 # explicit 7-file allowlist: manifest, logic, content, popup.{html,css,js}, icon128
 ```
 
@@ -90,8 +90,8 @@ SAQ A?" answer, then links to the 10-question assessment:
 
 https://gist.github.com/mortal7520/2b4e7b36392fe3c928bb3931bc1dca6d
 
-Live demo: https://patent-stock-twist-temporary.trycloudflare.com/extension
+Stable assessment: https://mortal7520.github.io/pci-scope-lens/assessment.html
 
-Assessment: https://patent-stock-twist-temporary.trycloudflare.com/assessment
+Checklist: https://mortal7520.github.io/pci-scope-lens/checklist.html
 
 That is the lead magnet: scope check → assessment → $99 audit-prep.

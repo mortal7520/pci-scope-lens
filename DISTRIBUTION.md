@@ -9,14 +9,14 @@ runbook plus the exact artifacts and copy to paste when you do it.
 
 | store | cost | account | package | status |
 |---|---|---|---|---|
-| Firefox Add-ons (AMO) | $0 | Firefox Account (free) | `dist/pci-scope-lens-0.1.0-firefox.xpi` | **submitted 2026-10-19, Awaiting Review** |
-| Microsoft Edge Add-ons | $0 | Microsoft Partner Center (free) | `dist/pci-scope-lens-0.1.0-edge.zip` | built, not uploaded |
+| Firefox Add-ons (AMO) | $0 | Firefox Account (free) | `dist/pci-scope-lens-0.1.2-firefox.xpi` | **submitted 2026-10-19, Awaiting Review** |
+| Microsoft Edge Add-ons | $0 | Microsoft Partner Center (free) | `dist/pci-scope-lens-0.1.2-edge.zip` | built, not uploaded |
 | Chrome Web Store | $5 one-time | Google developer account | not built | **out of scope** (fee) |
 
 
 ## 0. GitHub release (live now, no store account needed)
 
-https://github.com/mortal7520/pci-scope-lens/releases/tag/v0.1.0
+https://github.com/mortal7520/pci-scope-lens/releases/tag/v0.1.2
 
 - Firefox: download `.xpi` → `about:debugging#/runtime/this-firefox` → Load Temporary Add-on (or set `xpinstall.signatures.required=false` in a dev build).
 - Edge: download `.zip` → `edge://extensions` → Developer mode → Load unpacked.
@@ -36,8 +36,8 @@ popup.html popup.css popup.js icon128.png`), injects the AMO block into the Fire
 and zips both. It never touches the frozen root archive or the source manifest.
 
 ```
-dist/pci-scope-lens-0.1.0-firefox.xpi   7,852 B   sha256 b1b9d6329662f9f023e79a4420bc558b29fb6d71a5e93f5b75def8d8aff72a2e
-dist/pci-scope-lens-0.1.0-edge.zip      7,753 B   sha256 ee95c73be981a3863af77318372b155b7d099847bf734cfa48af8b7f21cbad91
+dist/pci-scope-lens-0.1.2-firefox.xpi   7,852 B   sha256 60d9a5407b67ac46de236d93cd2c96ac26a27a71145c4923a1e2ff5883287abe
+dist/pci-scope-lens-0.1.2-edge.zip      7,751 B   sha256 631e93851c7559cc394be25227a1a9cd3561df499468a77c17d591b5e6996cee
 ```
 
 Frozen root zip `../pci-scope-lens-0.1.0.zip` is unchanged: `6562eac79503743cac99c63551cc7b6207335e6a50a848fefd55c7e0333a95e5`.
@@ -55,7 +55,7 @@ npx --yes web-ext@8 lint --source-dir <extracted firefox package> --output json
 ```
 {"count":0,"summary":{"errors":0,"notices":0,"warnings":0},
  "metadata":{"id":"pci-scope-lens@bbflow.local","manifestVersion":3,"name":"PCI Scope Lens",
-             "version":"0.1.0","firefoxMinVersion":"121.0"},
+             "version":"0.1.2","firefoxMinVersion":"142.0"},
  "errors":[],"warnings":[],"notices":[]}
 ```
 
@@ -73,13 +73,13 @@ Resulting Firefox manifest block:
 "browser_specific_settings": {
   "gecko": {
     "id": "pci-scope-lens@bbflow.local",
-    "strict_min_version": "121.0",
+    "strict_min_version": "142.0",
     "data_collection_permissions": { "required": ["none"] }
   }
 }
 ```
 
-`strict_min_version 121.0` is the first Firefox release with the MV3 features this package uses
+`strict_min_version 142.0` is required by `data_collection_permissions`
 (content scripts + `action` + `chrome.tabs` messaging). The Edge package keeps the plain manifest —
 Edge only accepts Chromium packages and ignores `browser_specific_settings`.
 
@@ -153,7 +153,7 @@ Both stores ask why a broad host permission is needed. Use this verbatim:
    account is a manual step and was **not** done here).
 2. **Submit a New Add-on** → choose **"On this site"** (listed, discoverable). *Unlisted* is only for
    self-distribution and does not need a public listing.
-3. Upload `dist/pci-scope-lens-0.1.0-firefox.xpi`.
+3. Upload `dist/pci-scope-lens-0.1.2-firefox.xpi`.
 4. The validator runs automatically — expect the same 0/0/0 result shown in §2. If it reports
    `browser_specific_settings` unknown keys, they are already in the manifest; do not "fix" them by
    removing the block.
@@ -174,7 +174,7 @@ from the old one.
 1. Create a free **Microsoft Partner Center** account and enrol in the **Microsoft Edge** programme:
    **https://partner.microsoft.com/dashboard/microsoftedge/** (individual enrolment, no fee; manual
    step, not done here).
-2. **New extension** → upload `dist/pci-scope-lens-0.1.0-edge.zip`.
+2. **New extension** → upload `dist/pci-scope-lens-0.1.2-edge.zip`.
 3. Listing: name, short description, detailed description, category **Productivity**, language,
    screenshots (`store/promo-1280x800.png`), store logo (`icon128.png`).
 4. **Privacy policy URL is mandatory** — paste the gist URL from §3. Edge certification rejects
@@ -190,7 +190,7 @@ from the old one.
 | broad host permission questioned | `<all_urls>` content script + "Access your data for all websites" prompt | §4 explains the merchant-anywhere requirement; the script reads attributes, never values |
 | "collects browsing data" flag | the permission prompt looks invasive | `data_collection_permissions: none` in the manifest plus §4; no network code to find |
 | privacy policy URL dead | the gist is third-party hosted | move `PRIVACY.md` to GitHub Pages under the operator's account if the gist is ever rate-limited or removed |
-| version already exists | re-uploading 0.1.0 | bump `version` in `manifest.json`, re-run `build_dist.sh`, upload the new files |
+| version already exists | re-uploading 0.1.2 | bump `version` in `manifest.json`, re-run `build_dist.sh`, upload the new files |
 | AMO asks for source | only for minified/obfuscated packages | not applicable: 20 KB unminified, no build step |
 
 ## 8. Release process (every future version)
@@ -210,8 +210,8 @@ unzip -q dist/pci-scope-lens-0.1.2-firefox.xpi -d /tmp/lint-fx && \
 
 ```bash
 ./build_dist.sh
-unzip -Z1 dist/pci-scope-lens-0.1.0-firefox.xpi     # 7 files, no store/tests/docs
-unzip -Z1 dist/pci-scope-lens-0.1.0-edge.zip        # same 7 files
+unzip -Z1 dist/pci-scope-lens-0.1.2-firefox.xpi     # 7 files, no store/tests/docs
+unzip -Z1 dist/pci-scope-lens-0.1.2-edge.zip        # same 7 files
 python3 -c "import json;print(json.load(open('/tmp/lint-fx/manifest.json'))['browser_specific_settings'])"
 npx --yes web-ext@8 lint --source-dir /tmp/lint-fx --output json   # 0 errors / 0 warnings / 0 notices
 sha256sum dist/*                                                   # see §1
