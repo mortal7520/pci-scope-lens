@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PCI SAQ A readiness — 10-question self-check</title>
+<style>
+:root{--bg:#0b1020;--card:#141b32;--ink:#e8ecff;--muted:#9aa7c7;--acc:#7aa2ff;--ok:#4ade80;--bad:#ff7a90}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(900px 500px at 20% 0%,#1b2a5a 0%,var(--bg) 55%);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:820px;margin:0 auto;padding:48px 20px 80px}
+.card{background:linear-gradient(180deg,#141d3a,#101731);border:1px solid #23305a;border-radius:16px;padding:26px}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:0 0 10px}p{color:var(--muted)}
+.badge{display:inline-block;border:1px solid #2d3f74;border-radius:999px;padding:4px 10px;color:#bcd0ff;font-size:13px;margin-bottom:14px}
+.q{padding:13px 0;border-bottom:1px solid #22305a}.q:last-of-type{border:0}
+label{display:flex;gap:10px;align-items:flex-start;font-weight:500;color:var(--ink)}
+input[type=checkbox]{width:18px;height:18px;margin-top:4px;accent-color:var(--acc)}
+button{background:var(--acc);color:#071022;border:0;border-radius:10px;padding:12px 18px;font-weight:700;cursor:pointer;margin-top:16px}
+#result{margin-top:22px;padding:18px;border:1px solid #2b3a68;border-radius:12px;background:#0b1228;display:none}
+.score{font-size:44px;font-weight:800;margin:4px 0}.ok{color:var(--ok)}.bad{color:var(--bad)}
+ul{padding-left:20px}li{margin:5px 0;color:var(--muted)}a{color:var(--acc)}
+small{color:#7f8db0}
+</style>
+</head>
+<body><main>
+<p><a href="/pci-scope-lens/">← PCI Scope Lens</a></p>
+<span class="badge">10 questions · ~3 min · no data leaves this page</span>
+<h1>PCI SAQ A readiness</h1>
+<p>Answer honestly. This is a prep checklist, not an audit, not legal advice, and not a PCI assessment. Nothing is submitted or stored; the score is computed in this tab.</p>
+<div class="card" id="form">
+  <div id="questions"></div>
+  <button id="scoreBtn">Show readiness score</button>
+  <small>No account, no email, no network request.</small>
+</div>
+<div id="result" role="status"></div>
+<p><a href="/pci-scope-lens/checklist.html">Open the plain 10-question checklist →</a></p>
+</main>
+<script>
+const QS = [
+  ["Card data is captured only by a PCI-validated provider via iframe or redirect (SAQ A scope)?",4],
+  ["Your servers never store, process, or transmit cardholder data?",4],
+  ["All payment and checkout pages are served over TLS with no mixed content?",2],
+  ["You maintain a current inventory of third-party payment/service providers?",2],
+  ["You have a written incident response plan that covers card-data suspicion?",3],
+  ["Admin access to payment-adjacent systems requires MFA?",3],
+  ["You review access and remove leavers within a defined SLA?",2],
+  ["You have a change-management process for checkout/payment code?",2],
+  ["You run annual security awareness training for staff touching payment flows?",1],
+  ["You can produce the SAQ A answers and evidence within one business day?",2]
+];
+const box = document.getElementById("questions");
+QS.forEach(([text,weight],i)=>{
+  const d=document.createElement("div"); d.className="q";
+  d.innerHTML=`<label><input type="checkbox" data-w="${weight}" id="q${i+1}"><span>${text}</span></label>`;
+  box.appendChild(d);
+});
+document.getElementById("scoreBtn").addEventListener("click",()=>{
+  const boxes=[...document.querySelectorAll("input[type=checkbox]")];
+  const total=QS.reduce((s,q)=>s+q[1],0);
+  const got=boxes.reduce((s,b)=>s+(b.checked?Number(b.dataset.w):0),0);
+  const pct=Math.round(got/total*100);
+  const gaps=boxes.map((b,i)=>b.checked?null:QS[i][0]).filter(Boolean);
+  const r=document.getElementById("result");
+  r.style.display="block";
+  r.innerHTML=`<div class="score ${pct>=80?"ok":"bad"}">${pct}%</div>
+  <p>${got} of ${total} weighted points. ${pct>=80?"Looks close to a simple SAQ A shape — verify with your acquirer.":"There are gaps to review before treating this as SAQ A."}</p>
+  ${gaps.length?`<p><strong>Unchecked:</strong></p><ul>${gaps.map(g=>`<li>${g}</li>`).join("")}</ul>`:"<p>All ten boxes are checked. Keep the evidence.</p>"}
+  <p><small>This page does not send or store your answers.</small></p>`;
+  r.scrollIntoView({behavior:"smooth",block:"start"});
+});
+</script>
+</body></html>
